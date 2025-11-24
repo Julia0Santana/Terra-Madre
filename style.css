@@ -1,0 +1,341 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: #6A7BCE;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* === HEADER === */
+header {
+    background-color: #6A7BCE;
+    padding: 15px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
+.menu-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu-links a {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* === HERO (INDEX) === */
+.hero-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* === TÍTULO PRINCIPAL (INDEX) === */
+.main-title {
+    text-align: center;
+    padding: 50px 20px 30px 20px;
+}
+
+.main-title h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.2rem;
+    color: #6A7BCE;
+    font-weight: 400;
+}
+
+/* === SUÍTES (INDEX) === */
+.suites-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+    padding-bottom: 60px;
+}
+
+.suite-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.img-border {
+    border: 12px solid #6A7BCE;
+    border-radius: 30px;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.suite-text {
+    font-size: 0.9rem;
+    color: #6A7BCE;
+    line-height: 1.4;
+    padding: 0 5px;
+    font-weight: 400;
+}
+
+.star-wrapper {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.star-divider {
+    width: 45px;
+}
+
+/* === BENEFÍCIOS (INDEX) === */
+.benefits-section {
+    padding: 40px 0;
+    border-top: 10px solid #6a7bce;
+}
+
+.benefits-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.benefit-item {
+    text-align: center;
+    max-width: 220px;
+}
+
+.benefit-item img {
+    height: 60px;
+    margin: 0 auto 15px auto;
+}
+
+.benefit-item p {
+    color: #6A7BCE;
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+.benefit-sep img {
+    width: 40px;
+}
+
+/* === FOOTER === */
+footer {
+    background-color: #6A7BCE;
+    color: #fff;
+    padding: 35px 0;
+    margin-top: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.8rem;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.footer-text {
+    text-align: left;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.footer-text p {
+    margin: 0;
+}
+
+
+/* =========================================
+   NOVAS CLASSES PARA AS PÁGINAS DAS SUÍTES
+   ========================================= */
+
+.page-suite {
+    padding: 60px 0;
+}
+
+/* Container principal flex: Esquerda (Visual) e Direita (Info) */
+.suite-detail-container {
+    display: flex;
+    gap: 60px;
+    align-items: center; /* Alinha verticalmente ao centro */
+}
+
+/* --- COLUNA ESQUERDA: Estrelas e Foto --- */
+.suite-visuals {
+    flex: 1; /* Ocupa 50% */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0; /* Reset figure */
+}
+
+.suite-img-large {
+    border: 15px solid #6A7BCE; 
+    border-radius: 40px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 10px 0; /* Espaço entre foto e estrelas */
+}
+
+.stars-img {
+    height: 40px; 
+    width: auto;
+    display: block;
+}
+
+.stars-flipped {
+    transform: rotate(180deg); /* Vira as estrelas de baixo */
+}
+
+/* --- COLUNA DIREITA: Texto e Preço --- */
+.suite-info {
+    flex: 1; /* Ocupa 50% */
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.suite-title-detail {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.8rem;
+    color: #6A7BCE;
+    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.suite-description p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    color: #6A7BCE;
+}
+
+/* Área de Reserva (Footer do Article) */
+.booking-area {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.price-details {
+    text-align: right;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #6A7BCE;
+}
+
+.btn-reservar {
+    background-color: #6A7BCE;
+    color: #fff;
+    padding: 12px 35px;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-reservar:hover {
+    opacity: 0.9;
+}
+
+/* === RESPONSIVO === */
+@media (max-width: 900px) {
+    /* Index */
+    .suites-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .star-wrapper, .benefit-sep {
+        display: none;
+    }
+    .benefits-list {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .footer-text {
+        text-align: center;
+    }
+
+    /* Páginas Internas */
+    .suite-detail-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .suite-visuals {
+        width: 100%;
+    }
+
+    .suite-title-detail {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .booking-area {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .price-details {
+        text-align: center;
+    }
+}
